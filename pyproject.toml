@@ -11,8 +11,8 @@ requires-python = ">=3.8"
 license = {text = "Apache-2.0"}
 
 [tool.setuptools]
-py-modules = ["arc_gen", "arc_gen_variations", "common", "task_list"]
+py-modules = ["arc_gen_variations", "common", "task_list"]
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["tasks", "tasks.*"]
+include = ["arc_gen", "arc_gen.*", "tasks", "tasks.*"]
