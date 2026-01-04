@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arc-gen"
+version = "0.0.0"
+description = "ARC-GEN procedural benchmark generator"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+
+[tool.setuptools]
+py-modules = ["arc_gen", "arc_gen_variations", "common", "task_list"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tasks", "tasks.*"]
